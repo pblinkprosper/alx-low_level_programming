@@ -3,8 +3,11 @@
 #include <stdio.h>
 
 /**
- * The function main(void) serves as the staring point
- * for the program execution
+ * main - Entry point
+ * 
+ * Description: 'Print out a quote about programming'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
