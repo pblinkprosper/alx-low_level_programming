@@ -4,8 +4,8 @@
 
 /**
  * main - Entry point
- * 
- * Description: 'Print out a quote about programming'
+ *
+ * * Description: 'Print out a quote about programming'
  *
  * Return: Always 0 (Success)
  */
