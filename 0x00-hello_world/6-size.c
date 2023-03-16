@@ -1,5 +1,5 @@
 /* this program prints all sizes of data */
-#include <stdio.>
+#include <stdio.h>
 /**
  * main - entry point
  *
