@@ -1,12 +1,11 @@
 /* printf - printf tutorial */
 #include <stdio.h>
 /**
- * main(void) - entry point
+ * main - entry point
  *
- * Description - This is where the code
- * execution begins
+ * Description: 'the main(void) function is where the code begins'
  *
- * return - If this is zero the code was successful
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -15,8 +14,7 @@ int main(void)
 	 *
 	 * Description - Prints the phrase seen below as an output
 	 */
-	printf("with proper grammer, but the outcome is a piece of art");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 
-	/* return(0) - Always 0 (Success) */
 	return (0);
 }
