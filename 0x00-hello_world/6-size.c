@@ -24,11 +24,11 @@ int main(void)
 	 * sizeof - this function is used to evaluate
 	 * the size of a variable
 	 */
-	printf("Size of a char: %d bytes(s)\n", sizeof(charType));
-	printf("Size of an int: %d bytes(s)\n", sizeof(integerType));
-	printf("Size of a long int: %d bytes(s)\n", sizeof(longintType));
-	printf("Size of a long long: %d bytes(s)\n", sizeof(longlongType));
-	printf("Size of a float: %d bytes(s)\n", sizeof(floatType));
+	printf("Size of a char: %d byte(s)\n", sizeof(charType));
+	printf("Size of an int: %d byte(s)\n", sizeof(integerType));
+	printf("Size of a long int: %d byte(s)\n", sizeof(longintType));
+	printf("Size of a long long: %d byte(s)\n", sizeof(longlongType));
+	printf("Size of a float: %d byte(s)\n", sizeof(floatType));
 
 return (0);
 }
