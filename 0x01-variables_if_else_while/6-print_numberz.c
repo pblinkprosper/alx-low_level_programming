@@ -2,18 +2,17 @@
 /**
  * main - entry point
  *
- * Description: prints from 0 to 9
+ * Description: printing digits using putchar
  *
  * Return: always 0 (success)
  */
 int main(void)
 {
-	int i;
-
-	for (i = 0; i < 10; ++i)
+	int n;
+	for (n = 0; n < 10; ++n)
 	{
-		printf("%d", i);
+		putchar(n);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
-}
+}	
