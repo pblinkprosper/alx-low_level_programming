@@ -1,19 +1,19 @@
 /* This code prints with an error */
 #include <stdio.h>
-
+#include <unistd.h>
 /**
  * main - entry point
  *
  * Description: Code as alternative to printf
  *
- * Return: If return 0 (Success)
+ * Return: If return 1 (Error)
  */
 int main(void)
 {
 	/*
-	 * write - is a function that pints to the screen using system call
+	 * write - is a function that points to the screen using system call
 	 */
-	fwrite("and that piece of art is useful\" - Dora Korper, 2015-10-19\n");
+	write(2, "and that piece of art is useful\" - Dora Korper, 2015-10-19\n", 59);
 
-	return (0);
+	return (1);
 }
