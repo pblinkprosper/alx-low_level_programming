@@ -9,11 +9,10 @@
 int main(void)
 {
 
-	char abc;
+	char ab;
 
-	for (abc = 'a'; abc <= 'z'; abc++);
+	for (ab = 'a'; ab <= 'z'; ++ab);
 	{
-		abc = tolower(abc);
 		putchar('abc');
 	}
 
