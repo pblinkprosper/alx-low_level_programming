@@ -13,7 +13,9 @@ int main(void)
 	/*
 	 * write - is a function that pints to the screen using system call
 	 */
-	write("and that piece of art is useful\" - Dora Korper, 2015-10-19\n");
+	int c;
+
+	c = write("and that piece of art is useful\" - Dora Korper, 2015-10-19\n");
 
 	return (0);
 }
