@@ -2,9 +2,9 @@
 /**
  * main - entry point
  *
- * Description: print all combinations of two digits
+ * Description: prints all combinations of two digits
  *
- * Result: always 0 (success)
+ * Return: always 0 (success)
  */
 int main(void)
 {
@@ -17,13 +17,13 @@ int main(void)
 			putchar((i % 10) + '0');
 			putchar((j % 10) + '0');
 
-			if (i == 8 && j ==9)
+			if (i == 8 && j == 9)
 				continue;
 
 			putchar(',');
 			putchar(' ');
 		}
 	}
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
