@@ -21,7 +21,7 @@ int main(void)
 		putchar(e + '0');
 		putchar(f + '0');
 		putchar(g + '0');
-		if (e + f + g < 24
+		if (e + f + g < 24)
 		{
 			putchar(' ');
 			putchar(',');
