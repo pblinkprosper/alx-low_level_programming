@@ -15,9 +15,9 @@ int main(void)
 	{
 		putchar(hx);
 	}
-	for (ha = 'a'; <= 'f'; ++ha)
+	for (ha = 'a'; ha <= 'f'; ++ha)
 	{
-		putchar(ha)
+		putchar(ha);
 	}
 	putchar('\n');
 	return (0);
