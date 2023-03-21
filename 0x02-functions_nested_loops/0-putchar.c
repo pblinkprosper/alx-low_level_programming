@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - entry point
  *
@@ -7,6 +8,6 @@
 
 int main(void)
 {
-	fwrite(2, "_putchar\n", 9);
+	write(2, "_putchar\n", 9);
 	return (0);
 }
