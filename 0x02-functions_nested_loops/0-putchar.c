@@ -8,6 +8,6 @@
 int main(void)
 {
 	char *str = "_putchar";
-	write (0, *str, 8);
+	fwrite (0, *str, 8);
 	return (0);
 }
