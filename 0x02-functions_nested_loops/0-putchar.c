@@ -12,7 +12,7 @@ int main(void)
 	while (*pu)
 	{
 		putchar(*pu);
-		*pu++;
+		pu++;
 	}
 	putchar('\n');
 	return (0);
