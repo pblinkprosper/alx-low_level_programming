@@ -6,25 +6,6 @@
  */
 int main(void)
 {
-	char _, p, u, t, c, h, a, r;
-#include <stdio.h>
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-    return (0);
-}
-	putchar(_);
-	putchar(p);
-	putchar(u);
-	putchar(t);
-	putchar(c);
-	putchar(h);
-	putchar(u);
-	putchar(a);
-	putchar(r);
+	write(1, "_putchar\n", 9);
+	return (0);
 }
