@@ -11,9 +11,9 @@ int main(void)
 	
 	while (*pu)
 	{
-		_putchar(*pu);
-		pu++;
+		putchar(*pu);
+		*pu++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
