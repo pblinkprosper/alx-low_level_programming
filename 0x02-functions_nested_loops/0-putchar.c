@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <main.h>
 /**
  * main - entry point
  *
@@ -8,7 +7,17 @@
 int main(void)
 {
 	char _, p, u, t, c, h, a, r;
+#include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    return (0);
+}
 	putchar(_);
 	putchar(p);
 	putchar(u);
