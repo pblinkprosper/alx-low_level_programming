@@ -7,7 +7,6 @@
 
 int main(void)
 {
-	char *str = "_putchar";
-	fwrite (0, *str, 8);
+	write (2, "_putchar\n", 9);
 	return (0);
 }
