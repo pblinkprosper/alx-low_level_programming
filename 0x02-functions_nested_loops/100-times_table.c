@@ -4,7 +4,7 @@
  * @n: parameter to represent integers to print
  * Return: always 0 success
  */
-voidprint_times_table(int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
