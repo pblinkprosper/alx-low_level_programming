@@ -13,12 +13,12 @@ int print_sign(int n)
 	{
 		if (n == 0)
 		{
-			_putchar('0')
+			_putchar('0');
 			return (-1);
 		}
 	}
 	{
-	else
+	if else
 		_putchar('-');
 		return (0);
 }
