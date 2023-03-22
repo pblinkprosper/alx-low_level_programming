@@ -4,16 +4,11 @@
  *
  * Return: return 1 is success and 0 is false
  */
-int _islower(int c1, c2, c3)
+int _islower(int)
 {
-	/**
-	 * c1: first parameter to be tested
-	 * c2: second parameter to be tested
-	 * c3: third parameter to be tested
-	 */
-	int c1 = 'H';
-	int c2 = 'o';
-	int c3 = 108;
+	int c = 'H';
+	int c = 'o';
+	int c = 108;
 
 	if (_islower(c1))
 	{
