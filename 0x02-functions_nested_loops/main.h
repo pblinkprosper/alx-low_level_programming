@@ -5,6 +5,7 @@ int main(void)
 	char _putchar(char a);
 	return (0);
 }
+int main(void)
 {
 	void print_alphabet(void);
 	return (0);
