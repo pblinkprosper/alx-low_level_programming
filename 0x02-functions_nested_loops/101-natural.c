@@ -12,7 +12,7 @@ int main(void)
 	{
 		if (s % 3 == 0 || s % 5 == 0)
 		{
-			sum = s++;
+			sum += s;
 		}
 	}
 	printf("%d\n", sum);
