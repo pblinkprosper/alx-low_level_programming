@@ -14,12 +14,10 @@ int main(void)
 	{
 		fib[i] = fib[i - 1] + fib[i - 2];
 	}
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 		printf("%ld, ", fib[i]);
 	}
-	if (i == 50)
-		continue;
-	printf("\n");
+	printf("%ld\n", fib[49]);
 	return (0);
 }
