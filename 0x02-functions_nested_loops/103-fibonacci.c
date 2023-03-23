@@ -5,7 +5,13 @@
  */
 int main(void)
 {
-	long int i, fib[50], fib[0] = 1, fib[1] = 2, sum = 0;
+	long int i;
+	long int fib[50];
+	long int sum;
+
+	fib[0] = 1;
+	fib[1] = 2;
+	sum = 0;
 
 	for (i = 2; i < 49; i++)
 	{
