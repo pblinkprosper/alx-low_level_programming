@@ -16,9 +16,11 @@ int main(void)
 	}
 	for (i = 0; i < 50; i++)
 	{
-		if (i == 50)
+		if (i == 49)
+		{
 			continue;
-		printf("%ld, ", fib[i]);
+			printf("%ld, ", fib[i]);
+		}
 	}
 	printf("\n");
 	return (0);
