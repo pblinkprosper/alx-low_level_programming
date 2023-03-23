@@ -19,8 +19,8 @@ int main(void)
 		if (i == 49)
 		{
 			continue;
-			printf("%ld, ", fib[i]);
 		}
+		printf("%ld, ", fib[i]);
 	}
 	printf("\n");
 	return (0);
