@@ -7,10 +7,11 @@ int main(void)
 {
 	int i;
 	long int fib[50];
+	long int sum;
 
+	sum = 0;
 	fib[0] = 1;
 	fib[1] = 2;
-	long int sum = 0;
 	for (i = 2; i < 50; i++)
 	{
 		fib[i] = fib[i - 1] + fib[i - 2];
