@@ -5,18 +5,16 @@
  */
 int main(void)
 {
-	long int i, x = 1, y = 2, sum1 = 0, sum = 0;
+	long int i, fib[50], fib[0] = 1, fib[1] = 2, sum = 0;
 
-	for (i = 0; i < 49; i++)
-
+	for (i = 2; i < 49; i++)
 	{
-		if ((y % 2 == 0) && (y <= 4000000))
+		fib[i] = fib[i - 1] + fib[i - 2];
+		if (fib[1] % 2 == 0 && fib[i] <= 4000000)
 		{
-			sum = sum + y;
+			sum += fib[i];
 		}
-	sum1 = x + y;
-	x = y;
-	y = sum;
+	}
 	}
 	printf("%ld\n", sum);
 	return (0);
