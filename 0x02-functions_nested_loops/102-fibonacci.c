@@ -16,7 +16,7 @@ int main(void)
 	}
 	for (i = 0; i < 50; i++)
 	{
-		printf("%ld\n", fib[i]);
+		printf("%ld, \n", fib[i]);
 	}
 	return (0);
 }
