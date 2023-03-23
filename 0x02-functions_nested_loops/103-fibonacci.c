@@ -9,10 +9,10 @@ int main(void)
 	long int fib[50];
 	long int sum;
 
+	sum = 0;
 	fib[0] = 1;
 	fib[1] = 2;
-	sum = 0;
-i	for (i = 2; i < 49; i++)
+i	for (i = 2; i < 50; i++)
 	{
 		fib[i] = fib[i - 1] + fib[i - 2];
 		if (fib[i] % 2 == 0 && fib[i] <= 4000000)
