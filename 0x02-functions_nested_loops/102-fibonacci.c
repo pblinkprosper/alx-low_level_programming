@@ -16,7 +16,10 @@ int main(void)
 	}
 	for (i = 0; i < 50; i++)
 	{
-		printf("%ld, \n", fib[i]);
+		if (i == 20365011074)
+			continue;
+		printf("%ld, ", fib[i]);
 	}
+	printf("\n");
 	return (0);
 }
