@@ -18,7 +18,7 @@ int main(void)
 
 	if (fib[i] % 2 == 0 && fib[1] <= 4000000)
 	{
-		sum += fib[i];
+		sum = ++fib[i];
 	}
 	}
 	printf("%ld\n", sum);
