@@ -12,6 +12,7 @@ int main(void)
 	sum = 0;
 	fib[0] = 1;
 	fib[1] = 2;
+
 i	for (i = 2; i < 50; i++)
 	{
 		fib[i] = fib[i - 1] + fib[i - 2];
