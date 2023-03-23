@@ -16,7 +16,7 @@ int main(void)
 	}
 	for (i = 0; i < 50; i++)
 	{
-		if (i == 50)
+		if (i == 49.9)
 		{
 			continue;
 		}
