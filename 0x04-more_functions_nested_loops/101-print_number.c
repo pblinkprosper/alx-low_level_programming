@@ -29,4 +29,4 @@ void print_number(int n)
 		n1 = n2;
 		div /= 10;
 	}
-}}
+}
