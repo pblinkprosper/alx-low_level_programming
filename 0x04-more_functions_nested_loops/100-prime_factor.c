@@ -6,27 +6,17 @@
  */
 int main(void)
 {
-	long int i, j, k;
-	
-	k = -1;
-	i = 612852475143;
-	while (i % 2 == 0)
+	int n, l;
+	long int m = 612852475143;
+
+	for (l = 2; l <= m; l++)
 	{
-		k = 2;
-		i /= 2;
-	}
-	for (j = 3; j <= i / 2; i += 2)
+		if (m % l == 0)
 		{
-		while (i % i == 0)
-		{
-			k = j;
-			i /= i;
+			m = m / l;
+			n = l;
 		}
 	}
-	if (i > 2)
-	{
-		k = i;
-		printf("%ld\n", k);
-	}
-	return 0;
+	printf("%d\n", n);
+	return (0);
 }
