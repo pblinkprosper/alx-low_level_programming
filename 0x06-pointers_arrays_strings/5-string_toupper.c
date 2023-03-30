@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * *string_toupper - this function converts all lowercase letter to uppercase
+ * @str: parameter for the string constant
  *
  * Return: Always 0
  */
@@ -15,5 +16,5 @@ char *string_toupper(char *str)
 			str[i] -= 32;
 		}
 	}
-	return(str);
+	return (str);
 }
