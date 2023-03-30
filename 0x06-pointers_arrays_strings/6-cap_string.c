@@ -9,13 +9,15 @@ char *cap_string(char *str)
 {
 	int i, j, k;
 
-	char syms[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char syms[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"',
+	'(', ')', '{', '}'};
+
 	j = 32;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 
-		if (str[i] >= 'a' && str [i] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - j;
 		}
