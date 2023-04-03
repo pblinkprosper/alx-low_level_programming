@@ -4,7 +4,8 @@
  * @s: the string to be scanned
  * @accept: string containing list of characters to match with string s
  *
- * Return: returns s - accept
+ * Return: returns number of bytes in prefix of substring s which
+ * consists of only the bytes from accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
