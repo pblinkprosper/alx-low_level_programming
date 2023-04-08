@@ -8,7 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	for (argc = 0; argv[argc]; argc++)
-		printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
