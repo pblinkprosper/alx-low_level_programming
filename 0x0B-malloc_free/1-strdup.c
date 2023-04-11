@@ -3,9 +3,9 @@
 /**
  * _strdup - this function returns a pointer to a newly allocated space in
  * memory, which is a duplicate of the given string
- * @str: this is the string to be duplicated
+ * @str: this is the input string
  *
- * Return: it returns a pointer to the new string or NULL is str is NULL
+ * Return: it returns a pointer to the new string or NULL if str is NULL
  */
 char *_strdup(char *str)
 {
