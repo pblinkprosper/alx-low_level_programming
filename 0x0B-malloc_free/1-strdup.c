@@ -15,9 +15,10 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	c = 0;
-	nstr = malloc(sizeof(char) * (c + 1));
 	for (; str[c]; c++)
 		;
+	nstr = malloc(sizeof(char) * (c + 1));
+
 	if (nstr == NULL)
 		return (NULL);
 
