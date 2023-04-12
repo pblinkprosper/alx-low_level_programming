@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-/** strtow - this function splits a string into words
+/**
+ * strtow - this function splits a string into words
  * @str: the string to be spilt
  *
  * Return: returns a pointer to an array of strings
@@ -23,5 +24,5 @@ char **strtow(char *str)
 		word = strtok(NULL, " ");
 	}
 	words[i] = NULL;
-	return words;
+	return (words);
 }
