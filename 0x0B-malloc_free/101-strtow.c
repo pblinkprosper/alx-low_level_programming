@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /** strtow - this function splits a string into words
  * @str: the string to be spilt
  *
@@ -8,13 +9,13 @@
 char **strtow(char *str)
 {
 	char **words;
-	char word;
+	char *word;
 	int i;
 
 	words = (char **)malloc(sizeof(char *));
 	word = strtok(str, " ");
 	i = 0;
-	while (word != NULL)
+	while (*word)
 	{
 		words[i] = word;
 		i++;
