@@ -45,11 +45,9 @@ char **strtow(char *str)
 	words = word_count(str);
 	if (words == 0)
 		return (NULL);
-
 	nstr = (char **) malloc(sizeof(char *) * (words + 1));
 	if (nstr == NULL)
 		return (NULL);
-
 	for (i = 0; i <= n; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
@@ -71,8 +69,6 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
-
 	nstr[k] = NULL;
-
 	return (nstr);
 }
