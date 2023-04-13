@@ -105,7 +105,7 @@ char **strtow(char *str)
 	if (!words)
 	return (NULL);
 
-	nstr = malloc(sizeof(char *) * words);
+	nstr = malloc(sizeof(char *) * (words + 1));
 	mallocalloc(nstr, str, n);
 	while (i < n)
 	{
