@@ -1,68 +1,69 @@
-#include <stdlib.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
- * count_word - helper function to count the number of words in a string
- * @s: string to evaluate
+ * word_count - this function counts the number of words in a string
+ * @str: the string to be checked
  *
- * Return: number of words
+ * Return: the number of words
  */
-int count_word(char *s)
+int word_count(char *str)
 {
-	int flag, c, w;
+	int i, c, n;
 
-	flag = 0;
-	w = 0;
+	i = 0;
+	n = 0;
 
-	for (c = 0; s[c] != '\0'; c++)
+	for (c = 0; str[c] != '\0'; c++)
 	{
-		if (s[c] == ' ')
-			flag = 0;
-		else if (flag == 0)
+		if (str[c] == ' ')
+			i = 0;
+		else if (i == 0)
 		{
-			flag = 1;
-			w++;
+			i = 1;
+			n++;
 		}
 	}
 
-	return (w);
+	return (n);
 }
 /**
- * **strtow - splits a string into words
- * @str: string to split
+ * **strtow - this function splits a string into words
+ * @str: the string to be split
  *
- * Return: pointer to an array of strings (Success)
- * or NULL (Error)
+ * Return: pointer to the new string
  */
 char **strtow(char *str)
 {
-	char **matrix, *tmp;
-	int i, k = 0, len = 0, words, c = 0, start, end;
+	char **nstr, *temp;
+	int i, k, n, c, words, start, end;
 
-	while (*(str + len))
-		len++;
-	words = count_word(str);
+	k = 0;
+	n = 0;
+	c = 0;
+	while (*(str + n))
+		n++;
+	words = word_count(str);
 	if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sizeof(char *) * (words + 1));
-	if (matrix == NULL)
+	nstr = (char **) malloc(sizeof(char *) * (words + 1));
+	if (nstr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i <= n; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
 		{
 			if (c)
 			{
 				end = i;
-				tmp = (char *) malloc(sizeof(char) * (c + 1));
-				if (tmp == NULL)
+				temp = (char *) malloc(sizeof(char) * (c + 1));
+				if (temp == NULL)
 					return (NULL);
 				while (start < end)
-					*tmp++ = str[start++];
-				*tmp = '\0';
-				matrix[k] = tmp - c;
+					*temp++ = str[start++];
+				*temp = '\0';
+				nstr[k] = temp - c;
 				k++;
 				c = 0;
 			}
@@ -71,7 +72,7 @@ char **strtow(char *str)
 			start = i;
 	}
 
-	matrix[k] = NULL;
+	nstr[k] = NULL;
 
-	return (matrix);
+	return (nstr);
 }
