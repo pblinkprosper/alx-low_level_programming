@@ -8,12 +8,12 @@
  *
  * Description: this function takes 3 members and prints to screen when called
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	char *owner;
 	float age;
-};
+}dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 #endif
