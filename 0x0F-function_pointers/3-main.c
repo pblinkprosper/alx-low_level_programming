@@ -9,29 +9,27 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	int (*calc)(int, int);
-	char *av = argv[2];
+	char *c;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-			exit(98);
+		exit(98);
 	}
-	if ((*av != '+' && *av != '-' && *av != '/' && *av != '%') ||
-			(*av + 1) != 0)
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	c = argv[2];
+	if(get_op_func(c) == NULL || c[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	if ((*av == '/' || *av == '%') && b == 0)
+	if ((*c == '/' || *c == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	calc = get_op_func(av);
-	printf("%d\n", calc(a, b));
+	printf("%d\n", get_op_func(c)(a, b));
 	return (0);
 }
