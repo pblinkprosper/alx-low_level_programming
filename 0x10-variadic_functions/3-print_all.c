@@ -50,6 +50,7 @@ void print_flt(va_list f)
 
 /**
  * print_all - this function prints anything
+ * @format: this is the list of argument types passed to the function
  *
  * Return: nothing
  */
