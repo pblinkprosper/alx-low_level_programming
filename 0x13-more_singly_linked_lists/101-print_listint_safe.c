@@ -9,17 +9,16 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t count;
-	const listint_t *cr;
+	size_t count = 0;
+	const listint_t *temp;
 
-	count = 0;
-	while (head)
+	while (head != NULL)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
 		count++;
-		cr = head;
+		temp = head;
 		head = head->next;
-		if (cr <= head)
+		if (temp <= head)
 		{
 			printf("-> [%p] %d\n", (void *)head, head->n);
 			break;
