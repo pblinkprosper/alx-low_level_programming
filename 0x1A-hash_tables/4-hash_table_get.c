@@ -7,35 +7,21 @@
  *
  *  Return: A pointer to the newly created hash table
  */
-
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int idx = 0;
-	hash_node_t *head = NULL;
+	hash_node_t *node;
+	unsigned long int idx;
 
-	if (ht == NULL || key == NULL)
-	{
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
-	}
 
-	idx = hash_djb2((unsigned char *)key) % ht->size;
-
-	if (ht->array[idx] != NULL)
-	{
-		head = ht->array[idx];
-
-		while (head != NULL)
-		{
-			if (strcmp(head->key, key) == 0)
-			{
-				break;
-			}
-			head = head->next;
-		}
-	}
-	else
-	{
+	idx = key_index((const unsigned char *)key, ht->size);
+	if (idx >= ht->size)
 		return (NULL);
-	}
-	return (head->value);
+
+	node = ht->array[idx];
+	while (node && strcmp(node->key, key) != 0)
+		node = node->next;
+
+	return ((node == NULL) ? NULL : node->value);
 }
